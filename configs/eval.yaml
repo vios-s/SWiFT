@@ -1,0 +1,19 @@
+# @package _global_
+
+defaults:
+  - _self_
+  - data:  fit17k # choose datamodule with `test_dataloader()` for evaluation
+  - model: densenet
+  - logger: null
+  - trainer: default
+  - paths: default
+  - extras: default
+  - hydra: default
+
+task_name: "eval"
+
+tags: ["densenet"]
+
+# passing checkpoint path is necessary for evaluation
+ckpt_path: 'logs/MLE_baseline/runs/2024-01-27_15-18-50/checkpoints/epoch_045_step_33718.ckpt'
+

@@ -1,0 +1,9 @@
+_target_: src.data.fit17k_datamodule.FitpaDataModule
+data_dir: ${paths.skin_dir}
+dataset: null
+testset: 'fitzpatrick17k'
+transform: null
+test_transform: null
+batch_size: 64 # Needs to be divisible by the number of devices (e.g., if in a distributed setup)
+num_workers: 8
+pin_memory: False

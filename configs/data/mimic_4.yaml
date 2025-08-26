@@ -1,0 +1,10 @@
+_target_: src.data.mimic_datamodule.MIMICDataModule
+data_dir: ${paths.chest_dir}
+train_dataset: "mimic_train_gender_4.csv" #"isic_overbalance.csv"
+val_dataset: "mimic_val_gender_4.csv"
+test_dataset: "mimic_test_gender.csv"
+transform: null
+test_transform: null
+batch_size: 128 # Needs to be divisible by the number of devices (e.g., if in a distributed setup)
+num_workers: 2
+pin_memory: False

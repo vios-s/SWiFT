@@ -1,0 +1,37 @@
+_target_: src.models.skinnet_module.SkinNetLitModule
+
+optimizer:
+  _target_: torch.optim.SGD
+  _partial_: true
+  lr: 0.0001
+  momentum: 0.9
+
+scheduler:
+  _target_: torch.optim.lr_scheduler.ReduceLROnPlateau
+  _partial_: true
+  mode: min
+  factor: 0.1
+  patience: 10
+
+net:
+  _target_: src.models.components.head.ResNet18
+  weights: "ResNet18_Weights.IMAGENET1K_V1"
+
+head:
+  _target_: src.models.components.head.ClassificationHead
+  in_features: 512
+  out_features: 1
+
+# aux1:
+#   _target_: src.models.components.head.AuxiliaryHead
+#   in_features: 2048
+#   num_aux: 2
+
+# aux2:
+#   _target_: src.models.components.head.AuxiliaryHead
+#   in_features: 2048
+#   num_aux: 2
+
+# compile model for faster training with pytorch 2.0
+compile: false
+
