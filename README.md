@@ -52,7 +52,18 @@ conda activate myenv
 
 ## How to run
 
-Train model with default configuration
+# Run the debiasing algorithm
+```bash
+python algorithm/TwoStageFinetune.py
+```
+You can overide any parameter in argument.py or from command line like this 
+
+```bash
+python algorithm/test_script.py --arch resnet50 --task 'xray' --attr 'age_attribute' --lr-base 0.000001 --lr-forget 0.000001 --beta 0.01 --model-dir './logs/model/resnet50_mimic_val0_gender.ckpt' --csv-dir './data/chestXray/csv/mimic_val_gender_0.csv' --batch-size 128 --num-attr 'binary'
+```
+
+# Train the baseline model
+Pre-train the baseline model with default configuration
 
 ```bash
 # train on CPU
@@ -73,6 +84,7 @@ You can override any parameter from command line like this
 ```bash
 python src/train.py trainer.max_epochs=20 data.batch_size=64
 ```
+
 
 
 
