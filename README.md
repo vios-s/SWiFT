@@ -6,8 +6,8 @@
 <a href="https://pytorchlightning.ai/"><img alt="Lightning" src="https://img.shields.io/badge/-Lightning-792ee5?logo=pytorchlightning&logoColor=white"></a>
 <a href="https://hydra.cc/"><img alt="Config: Hydra" src="https://img.shields.io/badge/Config-Hydra-89b8cd"></a>
 <a href="https://github.com/ashleve/lightning-hydra-template"><img alt="Template" src="https://img.shields.io/badge/-Lightning--Hydra--Template-017F2F?style=flat&logo=github&labelColor=gray"></a><br>
-[![Paper](http://img.shields.io/badge/paper-arxiv.1001.2234-B31B1B.svg)](https://www.nature.com/articles/nature14539)
-[![Conference](http://img.shields.io/badge/AnyConference-year-4b44ce.svg)](https://papers.nips.cc/paper/2020)
+[![Paper](http://img.shields.io/badge/paper-arxiv.1001.2234-B31B1B.svg)](https://doi.org/10.59275/j.melba.2025-de23)
+[![Conference](http://img.shields.io/badge/AnyConference-year-4b44ce.svg)](https://www.melba-journal.org/issues/faimi25.html)
 
 </div>
 
@@ -22,7 +22,7 @@ updates each parameter with different gradient flows defined by its contribution
 
 ```bash
 # clone project
-git clone https://github.com/YourGithubName/your-repo-name
+git clone https://github.com/vios-s/SWiFT.git
 cd your-repo-name
 
 # [OPTIONAL] create conda environment
@@ -40,7 +40,7 @@ pip install -r requirements.txt
 
 ```bash
 # clone project
-git clone https://github.com/YourGithubName/your-repo-name
+git clone https://github.com/vios-s/SWiFT.git
 cd your-repo-name
 
 # create conda environment and install dependencies
@@ -73,4 +73,5 @@ You can override any parameter from command line like this
 ```bash
 python src/train.py trainer.max_epochs=20 data.batch_size=64
 ```
+
 
