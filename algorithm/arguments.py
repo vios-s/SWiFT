@@ -34,7 +34,7 @@ def parse_args():
     parser.add_argument('--mask-scale', help='Choose from block, layer, weight', type=str, default='weight')
     parser.add_argument('--subset-ratio', help='The ratio for the subset [0, 1]', type=float, default=0.1)
     parser.add_argument('--algo', help='Type of algorithms', type=str, default='FullFT')
-    parser.add_argument('--num-attr', help='Number of attributes to consider', type=str, default='Binary')
+    parser.add_argument('--num-attr', help='Number of attributes to consider', type=str, default='binary')
     # Setting directories
     parser.add_argument('--image-dir', help='path to image directory', type=str, default='./data/images')
     parser.add_argument('--csv-dir', help='path to csv directory', type=str, default='')
