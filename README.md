@@ -49,6 +49,21 @@ conda env create -f environment.yaml -n myenv
 # activate conda environment
 conda activate myenv
 ```
+## Dataset
+
+The datasets used in this project are available from the following sources (registration may be required):
+
+| Dataset                          | Access                                                                 |
+|----------------------------------|------------------------------------------------------------------------|
+| ISIC 2020                        | [Link](https://www.kaggle.com/cdeotte/jpeg-melanoma-256x256)           |
+| ISIC 2019/2018/2017              | [Link](https://www.kaggle.com/cdeotte/jpeg-isic2019-256x256)           |
+| Interactive Atlas of Dermoscopy  | [Link](https://derm.cs.sfu.ca/Welcome.html)                            |
+| PAD                              | [Link](https://data.mendeley.com/datasets/zr7vgbcyr2/1)                 |
+| Fitzpatrick17k                   | [Link](https://github.com/mattgroh/fitzpatrick17k)                     |
+| MIMIC-CXR                        | [Link](https://physionet.org/content/mimic-cxr/2.1.0/)                 |
+| CheXpert                         | [Link](https://stanfordmlgroup.github.io/competitions/chexpert/)       |
+| NIH ChestX-ray14                 | [Link](https://www.kaggle.com/datasets/nih-chest-xrays/data)           |
+
 
 ## How to run
 
@@ -84,6 +99,7 @@ You can override any parameter from command line like this
 ```bash
 python src/train.py trainer.max_epochs=20 data.batch_size=64
 ```
+
 
 
 
