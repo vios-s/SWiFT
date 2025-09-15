@@ -23,7 +23,7 @@ updates each parameter with different gradient flows defined by its contribution
 ```bash
 # clone project
 git clone https://github.com/vios-s/SWiFT.git
-cd your-repo-name
+cd SWiFT
 
 # [OPTIONAL] create conda environment
 conda create -n myenv python=3.9
@@ -41,7 +41,7 @@ pip install -r requirements.txt
 ```bash
 # clone project
 git clone https://github.com/vios-s/SWiFT.git
-cd your-repo-name
+cd SWiFT
 
 # create conda environment and install dependencies
 conda env create -f environment.yaml -n myenv
@@ -99,6 +99,7 @@ You can override any parameter from command line like this
 ```bash
 python src/train.py trainer.max_epochs=20 data.batch_size=64
 ```
+
 
 
 
